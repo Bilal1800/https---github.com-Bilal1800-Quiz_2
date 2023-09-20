@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <script src="script_gpa.js"></script>
+</head>
+<body>
+    <div align="center">
+        <div class="main">
+            <label for="cou"><strong>Enter the Number of Courses:</strong></label>
+            <input type="number" id="cou" min="1" max="6">
+            <button onclick="NumberOfCourse()">Enter</button>
+        </div>
+        <table id="tab" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Credit/Hours</th>
+                    <th>Obtain Marks</th>
+                </tr>
+            </thead>
+            <tbody id="tb">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <button onclick="calculate()">Calculate GPA</button>
+                        <button onclick="reset()">Reset</button>
+                    </td>
+                </tr>
+                <tr id="dis" style="display: none;">
+                    <td>Total GPA</td>
+                    <td colspan="2" id="res"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
+
