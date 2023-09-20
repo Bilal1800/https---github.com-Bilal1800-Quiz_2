@@ -6,6 +6,7 @@ function Functions() {
     if (number >= 0) {
         document.getElementById('error').innerText = "";
         
+        
         if (result == 0) {
             string = "Even";
         } else {
